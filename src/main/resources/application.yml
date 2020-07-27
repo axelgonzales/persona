@@ -1,9 +1,11 @@
-
+server:
+  servlet:
+    context-path: /persona
 spring:
   jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     generate-ddl: true
-    show-sql: true
-    
+    show-sql: false
     hibernate:
       ddl-auto: update  
   datasource:
