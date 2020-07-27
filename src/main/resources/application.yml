@@ -1,0 +1,14 @@
+
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    
+    hibernate:
+      ddl-auto: update  
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/persona
+    username: root
+    password: password
+  
