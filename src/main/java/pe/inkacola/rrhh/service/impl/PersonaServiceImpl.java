@@ -25,4 +25,19 @@ public class PersonaServiceImpl implements PersonaService {
 		return personaRepository.findAll();
 	}
 
+	@Override
+	public Persona actualizar(Persona persona) {
+		return personaRepository.save(persona);
+	}
+
+	@Override
+	public void eliminar(Integer id) {
+		 personaRepository.deleteById(id);
+	}
+
+	@Override
+	public Persona findById(Integer id) {
+		return personaRepository.findById(id).get();
+	}
+
 }
